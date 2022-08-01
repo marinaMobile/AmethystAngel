@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".white.Game"
+    android:background="@drawable/img_1">
+
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Score: "
+            android:fontFamily="@font/open"
+            android:layout_gravity="center"
+            android:textSize="32sp"/>
+
+            <TextView
+                android:id="@+id/scoretext"
+                android:textColor="@color/white"
+                android:fontFamily="@font/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/but_one"/>
+
+            <TextView
+                android:id="@+id/point_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 point"
+                android:fontFamily="@font/open"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="24dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/diamond_one"/>
+
+            <TextView
+                android:id="@+id/point_jew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 points"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open"
+                android:textSize="24dp"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/timeRan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Timer :"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:padding="10dp"
+                    android:fontFamily="@font/open"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/running"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:fontFamily="@font/open"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/diamond_one"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/diamond_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+    <ImageView
+        android:id="@+id/but_one"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/but_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
